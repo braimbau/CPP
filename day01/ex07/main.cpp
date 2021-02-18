@@ -23,8 +23,8 @@ int main(int ac, char **ag)
 		index = str.find(ag[2]);
 		while (index != std::string::npos)
 		{
-			str.replace(index,4, ag[3]);
-			index = str.find(ag[2], index + 1);
+			str.replace(index,std::string(ag[2]).length(), ag[3]);
+			index = str.find(ag[2], index + std::string(ag[3]).length());
 		}
 		ofs << str << std::endl;
 	}
