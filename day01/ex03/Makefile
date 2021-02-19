@@ -12,7 +12,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 CC = clang++
 
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
