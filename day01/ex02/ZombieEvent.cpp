@@ -2,9 +2,16 @@
 #include "ZombieEvent.hpp"
 #include <iostream>
 
-ZombieEvent::ZombieEvent(void){}
+ZombieEvent::ZombieEvent(void)
+{
+	std::cout << "Construction of event" << std::endl;
+	this->type = "Default";
+}
 
-ZombieEvent::~ZombieEvent(void){}
+ZombieEvent::~ZombieEvent(void)
+{
+	std::cout << "Destruction of event" << std::endl;
+}
 
 void ZombieEvent::setZombieType(std::string type)
 {
