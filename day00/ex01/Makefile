@@ -3,7 +3,7 @@ NAME = phonebook
 LIB = 
 
 SRCS =	./phonebook.cpp  	\
-		./Contact.class.cpp	\
+		./Contact.class.cpp
 
 FLAG = 
 FSANITIZE = -fsanitize=address -g3

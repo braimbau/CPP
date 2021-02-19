@@ -5,7 +5,7 @@ Contact::Contact(void) {}
 
 Contact::~Contact(void) {}
 
-void	Contact::set_contact(void)
+bool	Contact::set_contact(void)
 {
 	std::string str;
 
@@ -42,6 +42,12 @@ void	Contact::set_contact(void)
 	std::cout << "Darkest secret : ";
 	std::getline(std::cin, str);
 	this->darkest_secret = str;
+	if (this->first_name.empty() && this->last_name.empty() && this->nickname.empty()
+			&& this->login.empty() && this->postal_address.empty() && this->email_address.empty()
+			&& this->phone_number.empty() && this->birthday_date.empty() && this->favorite_meal.empty()
+			&& this->underwear_color.empty() && this->darkest_secret.empty())
+		return (true);
+	return (false);
 }
 
 void	Contact::display_contact(void) const
@@ -57,4 +63,24 @@ void	Contact::display_contact(void) const
 	std::cout << "Favorite meal : " << this->favorite_meal << std::endl;
 	std::cout << "Underwear color : " << this->underwear_color << std::endl;
 	std::cout << "Darkest secret : " << this->darkest_secret << std::endl;
+}
+
+std::string Contact::get_first_name(void) const
+{
+	return (this->first_name);
+}
+
+std::string Contact::get_last_name(void) const
+{
+	return (this->last_name);
+}
+
+std::string Contact::get_nickname(void) const
+{
+	return (this->nickname);
+}
+
+std::string Contact::get_login(void) const
+{
+	return (this->login);
 }

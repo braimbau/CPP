@@ -20,37 +20,39 @@ int main()
 		{
 			if (i < 8)
 			{
-				tab[i].set_contact();
-				i++;
+				if (tab[i].set_contact())
+					std::cout << "Warning : Empty contact" << std::endl;
+				else
+					i++;
 			}
 			else
-				std::cout << "max capacity reached" << std::endl;
+				std::cout << "Error : max capacity reached" << std::endl;
 		}
 		else if (str.compare("SEARCH") == 0)
 		{
 			if (i == 0)
-				std::cout << "No contacts" << std::endl;
+				std::cout << "Error : No contacts" << std::endl;
 			else
 			{
 				std::cout << "     INDEX|    PRENOM|       NOM|    PSEUDO" << std::endl;
 				for (int x = 0; x < i; x++)
 				{
 					std::cout << std::setfill(' ') << std::setw(10) << x << "|";
-					val = tab[x].first_name;
+					val = tab[x].get_first_name();
 					if (val.size() > 10)
 					{
 						val.resize(9);
 						val.append(".");
 					}
 					std::cout << std::setfill(' ') << std::setw(10) << val << "|";
-					val = tab[x].last_name;
+					val = tab[x].get_last_name();
 					if (val.size() > 10)
 					{
 						val.resize(9);
 						val.append(".");
 					}
 					std::cout << std::setfill(' ') << std::setw(10) << val << "|";
-					val = tab[x].nickname;
+					val = tab[x].get_nickname();
 					if (val.size() > 10)
 					{
 						val.resize(9);
@@ -64,7 +66,7 @@ int main()
 				if (val.length() == 1 && isdigit(val[0]) && stoi(val) < i)
 					tab[stoi(val)].display_contact();
 				else
-					std::cout << "Invalid index" << std::endl;
+					std::cout << "Error : Invalid index" << std::endl;
 			}
 		
 		}

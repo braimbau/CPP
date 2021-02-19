@@ -7,9 +7,13 @@ class Contact
 		Contact(void);
 		~Contact(void);
 		
-		void set_contact(void);
+		bool set_contact(void);
 		void display_contact(void) const;
-
+		std::string get_first_name(void) const;
+		std::string get_last_name(void) const;
+		std::string get_nickname(void) const;
+		std::string get_login(void) const;
+	private:
 		std::string first_name;
 		std::string last_name;
 		std::string nickname;
