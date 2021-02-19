@@ -11,7 +11,7 @@ ZombieHorde::ZombieHorde(int n_) : n(n_)
 	for (int x = 0; x < n; x++)
 	{
 		this->horde[x].setName(horde[x].randomName());
-		this->horde[x].setType("_");
+		this->horde[x].setType("Bloater");
 	}
 }
 
