@@ -3,17 +3,23 @@
 
 int main(int ac, char **ag)
 {
-	int i = 0;
+	int x = 1;
 
 	if (ac == 1)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 	else
 	{
-		while (ag[1][i])
+		while (x < ac)
 		{
-			ag[1][i] = toupper(ag[1][i]);
-			i++;
+			int i = 0;
+			while (ag[x][i])
+			{
+				ag[x][i] = toupper(ag[x][i]);
+				i++;
+			}
+			std::cout << ag[x] << " ";
+			x++;
 		}
-		std::cout << ag[1] << std::endl;
+		std::cout << std::endl;
 	}
 }
