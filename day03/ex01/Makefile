@@ -1,8 +1,9 @@
-NAME = fixed
+NAME = ScavTrap
 
 LIB = 
 
-SRCS =	./Fixed.cpp	\
+SRCS =	./FragTrap.cpp	\
+		./ScavTrap.cpp	\
 		./main.cpp
 
 FLAG = 

@@ -1,8 +1,11 @@
-NAME = fixed
+NAME = ClapTrap
 
 LIB = 
 
-SRCS =	./Fixed.cpp	\
+SRCS =	./ClapTrap.cpp	\
+		./FragTrap.cpp	\
+		./ScavTrap.cpp	\
+		./NinjaTrap.cpp	\
 		./main.cpp
 
 FLAG = 

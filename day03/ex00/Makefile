@@ -1,8 +1,8 @@
-NAME = fixed
+NAME = FragTrap
 
 LIB = 
 
-SRCS =	./Fixed.cpp	\
+SRCS =	./FragTrap.cpp	\
 		./main.cpp
 
 FLAG = 

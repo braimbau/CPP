@@ -33,5 +33,3 @@ void Fixed::setRawBits(int const raw)
 	std::cout << "member fn setRawbit called" << std::endl;
 	this->fixed_value = raw;
 }
-
-const int Fixed::nb_bits = 8;

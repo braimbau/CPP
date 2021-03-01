@@ -10,8 +10,8 @@ class Fixed
 
 			Fixed &	operator=(const Fixed & rhs);
 
-			int getRawBits(void) const;
-			void setRawBits(int const raw);
+			int		getRawBits(void) const;
+			void	setRawBits(int const raw);
 	private:
 			int fixed_value;
 			const static int nb_bits;
