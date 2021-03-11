@@ -7,6 +7,7 @@ SRCS =	./AWeapon.cpp		\
 		./PowerFist.cpp		\
 		./Enemy.cpp			\
 		./SuperMutant.cpp	\
+		./RadScorpion.cpp	\
 		./Character.cpp		\
 		./main.cpp
 

@@ -1,22 +1,23 @@
-#include "SuperMutant.hpp"
+#include "RadScorpion.hpp"
 
-SuperMutant::SuperMutant(void) : Enemy(170, "Super Mutant")
+RadScorpion::RadScorpion(void) : Enemy(170, "Rad Scoprion")
 {
-	std::cout << "Gaaah. Me want smash heads!" << std::endl;
+	std::cout << "* click click click *" << std::endl;
 }
 
-SuperMutant::~SuperMutant(void) {}
-
-SuperMutant::SuperMutant(const SuperMutant & src) : Enemy(src.getHP(), src.getType()) {}
-
-void SuperMutant::takeDamage(int damage)
+RadScorpion::~RadScorpion(void)
 {
-	Enemy::takeDamage(damage - 3);
-	if (this->getHP() == 0)
-		std::cout << "Aaargh..." << std::endl;
+	std::cout << "* SPROTCH *" << std::endl;
 }
 
-SuperMutant &	SuperMutant::operator=(const SuperMutant & rhs)
+RadScorpion::RadScorpion(const RadScorpion & src) : Enemy(src.getHP(), src.getType()) {}
+
+void RadScorpion::takeDamage(int damage)
+{
+	Enemy::takeDamage(damage);
+}
+
+RadScorpion &	RadScorpion::operator=(const RadScorpion & rhs)
 {
 	*this = rhs;
 	return (*this);

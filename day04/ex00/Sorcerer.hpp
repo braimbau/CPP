@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include "Victim.hpp"
 
 class Sorcerer
 {
@@ -16,6 +17,7 @@ class Sorcerer
 
 			std::string getName(void) const;
 			std::string getTitle(void) const;
+			void polymorph(Victim const &) const;
 			
 	private:
 			std::string _Name;

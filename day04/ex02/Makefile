@@ -1,11 +1,8 @@
-NAME = SorcerersAndStuff
+NAME = Purification
 
 LIB = 
 
-SRCS =	./Sorcerer.cpp	\
-		./Victim.cpp	\
-		./Peon.cpp		\
-		./Rat.cpp		\
+SRCS =	./Squad.cpp	\
 		./main.cpp
 
 FLAG = 

@@ -10,12 +10,13 @@ class Victim
 			Victim(void);
 			Victim(std::string name);
 			Victim(const Victim & src);
-			~Victim();
+			virtual ~Victim();
 
 			Victim &	operator=(const Victim & rhs);
 
 			std::string getName(void) const;
-	private:
+			virtual void getPolymorphed(void) const;
+	protected:
 			std::string _Name;
 };
 

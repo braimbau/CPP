@@ -41,11 +41,12 @@ void Character::attack(Enemy *target)
 		std::cout << "Y'a plus assez d'AP" << std::endl;
 		return;
 	}
-	{
-		std::cout << this->_Name << " attacks " <<  target->getType() << " with " << this->getWeapon()->getName() <<  std::endl;
-		this->_Weapon->attack();
-		this->_AP -= this->_Weapon->getAPCost();
-	}
+	std::cout << this->_Name << " attacks " <<  target->getType() << " with " << this->getWeapon()->getName() <<  std::endl;
+	this->_Weapon->attack();
+	this->_AP -= this->_Weapon->getAPCost();
+	target->takeDamage(this->_Weapon->getDamage());
+	if (target->getHP() == 0)
+		delete target;
 }
 
 std::string Character::getName(void) const
