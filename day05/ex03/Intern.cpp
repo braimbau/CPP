@@ -27,6 +27,8 @@ AForm * Intern::makeForm(std::string type, std::string target)
 		else
 			delete tab[i];
 	}
+	if (ret == NULL)
+		throw Intern::unknowtypeexception();
 	return (ret);
 }
 
