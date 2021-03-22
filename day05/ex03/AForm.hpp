@@ -41,7 +41,7 @@ class AForm
 		{
 			virtual const char *what() const throw()
 			{
-				return("Form unsigned");
+				return("form unsigned");
 			}
 		};
 
