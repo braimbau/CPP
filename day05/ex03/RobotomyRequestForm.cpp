@@ -14,12 +14,14 @@ RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm & src)
 
 void RobotomyRequestForm::subExecute(Bureaucrat const & executor) const
 {
+	(void)executor;
 	std::cout << "***brrrrrrrrrr***" << std::endl;
 	std::cout << _target << " have been robotomized" << std::endl;
 }
 
 RobotomyRequestForm	&	RobotomyRequestForm::operator=(const RobotomyRequestForm & rhs)
 {
+	(void)rhs;
 	return (*(this));
 }
 

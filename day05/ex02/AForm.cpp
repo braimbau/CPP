@@ -1,6 +1,6 @@
 #include "AForm.hpp"
 
-AForm::AForm(std::string name, int signGrade, int execGrade) : _name(name), _signGrade(signGrade), _execGrade(execGrade), _isSigned(false)
+AForm::AForm(std::string name, int signGrade, int execGrade) : _name(name), _execGrade(execGrade), _signGrade(signGrade), _isSigned(false)
 {
 	if (signGrade > 150)
 	{
@@ -28,7 +28,7 @@ AForm::AForm() {}
 
 AForm::~AForm() {}
 
-AForm::AForm(const AForm & rhs) : _name(rhs._name), _signGrade(rhs._signGrade) ,_execGrade(rhs._execGrade)
+AForm::AForm(const AForm & rhs) : _name(rhs._name), _execGrade(rhs._execGrade), _signGrade(rhs._signGrade)
 {
 	(*(this) = rhs);
 }

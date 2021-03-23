@@ -14,6 +14,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm & src)
 
 void ShrubberyCreationForm::subExecute(Bureaucrat const & executor) const
 {
+	(void)executor;
 	std::fstream ofs;
 	ofs.open(_target, std::ios::out);
 	ofs << "       _-_\n    /~~   ~~\\\n /~~         ~~\\\n{               }\n \\  _-     -_  /\n   ~  \\\\ //  ~\n_- -   | | _- _\n  _ -  | |   -_\n      /\\/ \\\\" << std::endl;
@@ -21,6 +22,7 @@ void ShrubberyCreationForm::subExecute(Bureaucrat const & executor) const
 
 ShrubberyCreationForm	&	ShrubberyCreationForm::operator=(const ShrubberyCreationForm & rhs)
 {
+	(void)rhs;
 	return (*(this));
 }
 

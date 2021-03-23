@@ -1,6 +1,6 @@
 #include "Form.hpp"
 
-Form::Form(std::string name, int signGrade, int execGrade) : _name(name), _signGrade(signGrade), _execGrade(execGrade), _isSigned(false)
+Form::Form(std::string name, int signGrade, int execGrade) : _name(name), _execGrade(execGrade), _signGrade(signGrade), _isSigned(false)
 {
 	if (signGrade > 150)
 	{
@@ -25,7 +25,7 @@ Form::Form(std::string name, int signGrade, int execGrade) : _name(name), _signG
 
 Form::~Form() {}
 
-Form::Form(const Form & rhs) : _name(rhs._name), _signGrade(rhs._signGrade) ,_execGrade(rhs._execGrade)
+Form::Form(const Form & rhs) : _name(rhs._name),_execGrade(rhs._execGrade), _signGrade(rhs._signGrade) 
 {
 	(*(this) = rhs);
 }

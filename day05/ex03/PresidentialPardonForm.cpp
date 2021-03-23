@@ -14,11 +14,14 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm & sr
 
 void PresidentialPardonForm::subExecute(Bureaucrat const & executor) const
 {
+	(void)executor;
 	std::cout << _target << " have been pardoned by Zafod Beeblebrox" << std::endl;
 }
 
+
 PresidentialPardonForm	&	PresidentialPardonForm::operator=(const PresidentialPardonForm & rhs)
 {
+	(void)rhs;
 	return (*(this));
 }
 

@@ -34,5 +34,6 @@ AForm * Intern::makeForm(std::string type, std::string target)
 
 Intern &	Intern::operator=(const Intern & rhs)
 {
+	(void)rhs;
 	return (*this);
 }
