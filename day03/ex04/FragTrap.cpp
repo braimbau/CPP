@@ -2,6 +2,14 @@
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
+	this->_HitPoints = 100;
+	this->_MaxHitPoints = 100;
+	this->_EnergyPoints = 100;
+	this->_MaxEnergyPoints = 100;
+	this->_MeleeAttackDamage = 30;
+	this->_RangedAttackDamage = 20;
+	this->_ArmorDamageReduction = 5;
+	this->_Level = 1;
 	std::cout << "The CL4P-TP " << this->_Name << " is now brainwashed to be a FR4G-TP..." << std::endl;
 }
 

@@ -8,17 +8,17 @@
 #include "ScavTrap.hpp"
 #include "NinjaTrap.hpp"
 
-class SuperTrap : public NinjaTrap, public FragTrap
+class SuperTrap : public FragTrap, public NinjaTrap
 {
 	public:
 			SuperTrap(std::string name);
 			SuperTrap(const SuperTrap & src);
 			virtual	~SuperTrap();
 
-			void rangedAttack(std::string const & target);
-			void meleeAttack(std::string const & target);
-			
 			SuperTrap &	operator=(const SuperTrap & rhs);
+
+			using NinjaTrap::meleeAttack;
+			using FragTrap::rangedAttack;
 };
 
 #endif

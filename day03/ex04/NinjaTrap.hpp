@@ -8,7 +8,7 @@
 #include "ScavTrap.hpp"
 
 
-class NinjaTrap : public virtual ClapTrap
+class NinjaTrap : virtual public ClapTrap
 {
 	public:
 			NinjaTrap(std::string name);

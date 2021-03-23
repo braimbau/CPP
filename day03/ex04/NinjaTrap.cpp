@@ -9,6 +9,7 @@ NinjaTrap::NinjaTrap(std::string name) : ClapTrap(name)
 	this->_MeleeAttackDamage = 60;
 	this->_RangedAttackDamage = 5;
 	this->_ArmorDamageReduction = 0;
+	this->_Level = 1;
 
 	std::cout << "The CL4P-TP " << this->_Name << " is now brainwashed to be a NINJ4-TP..." << std::endl;
 }

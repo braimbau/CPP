@@ -1,11 +1,15 @@
 #include "SuperTrap.hpp"
 #include "ClapTrap.hpp"
 
-SuperTrap::SuperTrap(std::string name) : ClapTrap(name), FragTrap(name), NinjaTrap(name)
+SuperTrap::SuperTrap(std::string name) : ClapTrap(name), NinjaTrap(name), FragTrap(name)
 {
-	this->_EnergyPoints = NinjaTrap::_EnergyPoints;
-	this->_MaxEnergyPoints = NinjaTrap::_MaxEnergyPoints;
-	this->_MeleeAttackDamage = NinjaTrap::_MeleeAttackDamage;
+	std::cout << name << std::endl;
+	this->_Level = 1;
+	this->_HitPoints = 100;
+	this->_MaxHitPoints = 100;
+	this->_RangedAttackDamage = 20;
+	this->_ArmorDamageReduction = 5;
+
 	std::cout << "The CL4P-TP " << this->_Name << " is now brainwashed to be a SUPER-TP..." << std::endl;
 }
 

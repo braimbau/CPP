@@ -1,7 +1,6 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(std::string name) : _Name(name), _HitPoints(100), _MaxHitPoints(100), _EnergyPoints(100), _MaxEnergyPoints(100),
-							_Level(1), _MeleeAttackDamage(30), _RangedAttackDamage(20), _ArmorDamageReduction(5)
+ClapTrap::ClapTrap(std::string name) : _Name(name)
 {
 	std::cout << "CL4P-TP named " << this->_Name << " is... borned, I guess" << std::endl;
 }

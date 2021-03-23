@@ -1,7 +1,7 @@
-NAME = convert
+NAME = Convertor
 
-SRCS =	./main.cpp		\
-		./Number.cpp
+SRCS =	./convertor.cpp	\
+	./main.cpp
 
 FSANITIZE = -fsanitize=address -g3
 

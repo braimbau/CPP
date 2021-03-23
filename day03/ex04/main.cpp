@@ -23,6 +23,6 @@ int main()
 	s.vaulthunter_dot_exe("mechant");
 	s.vaulthunter_dot_exe("mechant");
 	s.vaulthunter_dot_exe("mechant");
-//	s.meleeAttack("grand mechant");
-//	s.rangedAttack("Grand Mechant");
+	s.meleeAttack("grand mechant");
+	s.rangedAttack("Grand Mechant");
 }
