@@ -39,8 +39,8 @@ class Form
 
 	private:
 		const std::string	_name;
-		int					_execGrade;
-		int					_signGrade;
+		const int			_execGrade;
+		const int			_signGrade;
 		bool				_isSigned;
 };
 

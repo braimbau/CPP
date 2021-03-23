@@ -24,7 +24,7 @@ AForm::AForm(std::string name, int signGrade, int execGrade) : _name(name), _exe
 	}
 }
 
-AForm::AForm() {}
+AForm::AForm() : _execGrade(1), _signGrade(1) {}
 
 AForm::~AForm() {}
 

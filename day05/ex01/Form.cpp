@@ -32,7 +32,7 @@ Form::Form(const Form & rhs) : _name(rhs._name),_execGrade(rhs._execGrade), _sig
 
 void Form::beSigned(const Bureaucrat & bureaucrat)
 {
-	if (_signGrade > bureaucrat.getGrade())
+	if (_signGrade < bureaucrat.getGrade())
 		throw Form::GradeTooLowException();
 	else
 		_isSigned = true;
