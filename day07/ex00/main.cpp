@@ -1,5 +1,5 @@
 #include "Whatever.hpp"
-#include "awesome.hpp"
+#include "Awesome.hpp"
 #include <iostream>
 #include <string>
 
