@@ -3,7 +3,7 @@
 
 int	main(void)
 {
-	std::cout << "\e[94mArray of Int:\e[0m"<< std::endl;
+	std::cout << "Array of Int:"<< std::endl;
 	Array<int> b(5);
 
 	std::cout << "Size of b: " << b.size() << std::endl;
@@ -34,7 +34,7 @@ int	main(void)
 		std::cout << d[i] << " ";
 	std::cout << std::endl;
 
-	std::cout << "\e[94mArray of Float:\e[0m"<< std::endl;
+	std::cout << std::endl << "Array of Float:"<< std::endl;
 	Array<float> fl(5);
 	fl[0] = 18.67;
 	fl[1] = 43;
@@ -45,7 +45,7 @@ int	main(void)
 		std::cout << fl[i] << " ";
 	std::cout << std::endl;
 
-	std::cout << "\e[94mArray of String:\e[0m"<< std::endl;
+	std::cout << "Array of String:"<< std::endl;
 	Array<std::string> str(4);
 	str[0] = "Hello";
 	str[1] = " ";
@@ -60,7 +60,7 @@ int	main(void)
 		std::cout << str2[i];
 	std::cout << std::endl;
 
-	std::cout << "\e[94mArray of Char:\e[0m"<< std::endl;
+	std::cout << std::endl << "Array of Char:"<< std::endl;
 	Array<char> ch(3);
 	ch[0] = 'A';
 	ch[1] = 'B';
@@ -69,7 +69,7 @@ int	main(void)
 		std::cout << ch[i] << " ";
 	std::cout << std::endl;
 
-	std::cout << "\e[94mArray of nothing:\e[0m"<< std::endl;
+	std::cout << std::endl << "Array of nothing:"<< std::endl;
 	Array<float> nothing;
 	try
 	{
