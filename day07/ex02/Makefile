@@ -1,4 +1,4 @@
-NAME = TempleRun
+NAME = Sorte
 
 SRCS =	./main.cpp
 
