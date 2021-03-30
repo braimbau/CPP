@@ -2,7 +2,7 @@ NAME = find
 
 SRCS =	./main.cpp
 
-FSANITIZE = -fsanitize=address -g3
+FSANITIZE = -fsanitize=address -g3 -std=c++98 -pedantic
 
 CXXFLAGS = -Wall -Wextra -Werror
 

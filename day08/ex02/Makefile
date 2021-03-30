@@ -1,7 +1,6 @@
-NAME = Span
+NAME = Mutant
 
 SRCS =	./main.cpp \
-		./span.cpp
 
 FSANITIZE = -fsanitize=address -g3
 

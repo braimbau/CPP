@@ -22,7 +22,7 @@ void span::addNumber(std::vector<int>::iterator f, std::vector<int>::iterator l)
 	
 int span::longestSpan(void) {
 	if (_i < 2)
-		throw std::runtime_error("bro...");
+		throw std::runtime_error("bro... fo o moin deu argumen");
 	return(*(std::max_element(_vec.begin(), _vec.end())) - *(std::min_element(_vec.begin(), _vec.end())));
 }
 
